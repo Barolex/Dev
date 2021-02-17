@@ -1,0 +1,588 @@
+$topBackground: #2e3346;
+$sidebarBackground: #c46d5c;
+$monteFont: "Montserrat", Helvetica, sans-serif;
+$nunitoFont: "Nunito", Helvetica, sans-serif;
+$contentText: #8f959e;
+$defaultTransition: all 1s ease-in-out;
+$designTransition: all 2s ease-in-out;
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap&family=Nunito:wght@200;300&display=swap');
+
+
+.html,
+    body {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+
+// Website design
+
+.firstDesign {
+    background-color: $topBackground;
+    width: 85vw;
+    height: 85vh;
+    position: absolute;
+    transform: rotate(-35deg);
+    top: -60%;
+    left: -25%;
+    z-index: -1;
+    transition: $designTransition;
+  }
+  
+  .secondDesign {
+    background-color: $topBackground;
+    width: 110vw;
+    height: 100vh;
+    position: absolute;
+    transform: rotate(15deg);
+    top: -70%;
+    z-index: -1;
+    transition: $designTransition;
+  }
+  
+  .designSidebar {
+    background-color: $sidebarBackground;
+    width: 25vw;
+    height: 240vh;
+    position: absolute;
+    left: -1%;
+    z-index: -2;
+    transition: $designTransition;
+  }
+
+
+// Website Content Design
+
+ *,*:before,*:after {
+        box-sizing: inherit;
+    }
+ .container > * {
+        // activate to see the grid
+        // border: 2px solid green;
+        padding: 10px;
+    }
+
+
+.container {
+    display: grid;
+    margin: 0px;
+    grid-gap: 30px;
+    grid-template-columns: 330px 300px 500px;
+    grid-template-rows: auto 600px 780px;
+    grid-template-areas:
+    "one two two"
+    "four five five"
+    "four five five"
+    "four five five";
+    transition: $defaultTransition;
+}
+
+.item2 {
+    grid-area: two;
+    margin-top: 100px;
+    margin-left: 450px;
+    font-size: 15px!important;
+    color: white;
+    transition: $defaultTransition;
+}
+.item4 {
+    grid-area: five;
+    transition: $defaultTransition;
+}
+.item3 {
+    margin-bottom: 30px;
+    grid-area: four;
+    transition: $defaultTransition;
+}
+
+
+
+/* -----------------------------------------
+               SIDEBAR CONTENT
+--------------------------------------------*/
+
+img {
+    border-radius: 50%;
+    width: 80%;
+    margin-left: 20px;
+    transition: $defaultTransition;
+}
+.titles {
+    font-family: $monteFont;
+    font-weight: 700;
+}
+.allText {
+    font-family: $nunitoFont;
+    font-size: 18px;
+    transition: $defaultTransition;
+}
+.textPosition {
+    margin-left: 55%;
+    color: black;
+
+}
+
+.compSquares {
+    border: 5px #412721 solid;
+    position: absolute;
+    margin-top: 3%;
+
+}
+
+.compSquares2 {
+    margin-left: 8%;
+}
+.compSquares3 {
+    margin-left:16%;
+}
+.compSquares4 {
+    margin-left:24%;
+}
+
+.compLightSquare {
+    border: 5px #bfa19e solid;
+    position: absolute;
+    margin-top: 3%;
+    margin-left: 24%;
+}
+.compLightSquare2 {
+    margin-left: 32%;
+}
+.compLight {
+    margin-left: 16%;
+}
+
+.competencies {
+    position: absolute;
+    margin-top: 55px;
+    list-style: none;
+    color: $topBackground;
+    // this is used so text does not wrap on next line
+    white-space: nowrap;
+    .competenciesTitle {
+        margin-bottom: 8%;
+    }
+}
+
+
+.strengths-menu {
+    margin-top: 25px;
+    margin-left: -40px;
+    .strengths {
+        list-style: none;
+        color: $topBackground;
+        .strengthsTitle {
+            margin-bottom: 16px;
+        }
+        .strengthsContent {
+            font-family: $nunitoFont;
+            font-size: 16px;
+            
+        }
+    
+    }
+}
+
+.weaknesses-menu {
+    margin-top: 25px;
+    margin-left: -40px;
+    .weaknesses {
+        color: $topBackground;
+        list-style: none;
+        .weaknessesTitle {
+            margin-bottom: 8%;
+        }
+        .weakContent {
+            font-family: $nunitoFont;
+            font-size: 16px;
+            
+        }
+    }
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.contact-menu {
+    margin-top: 25px;
+    margin-left: -40px;
+    .contact {
+        color: $topBackground;
+        list-style: none;
+        .contactTitle {
+            margin-bottom: 8%;
+        }
+        .contactContent {
+            font-family: $nunitoFont;
+            font-size: 16px; 
+        }
+    }
+}
+
+.social-menu {
+    margin-top: 25px;
+    margin-left: -40px;
+    .social {
+        color: $topBackground;
+        list-style: none;
+        .socialTitle {
+            margin-bottom: 8%;
+        }
+        .socialContent {
+            font-family: $nunitoFont;
+            font-size: 16px; 
+        }
+    }
+}
+
+/* -----------------------------------------
+               MAIN CONTENT
+--------------------------------------------*/
+
+.last-contact-name, .last-contact-text {
+    display: none;
+}
+
+.title-name {
+    font-size: 60px;
+    color: $sidebarBackground;
+    width: 60%;
+    font-weight: 400;
+    font-family: $monteFont;
+    margin-left: 80px;
+}
+
+.position-name {
+    font-family: $nunitoFont;
+    color: $sidebarBackground;
+    font-size: 30px;
+    font-weight: 200;
+    margin-left: 84px;
+}
+
+.about-name {
+    color: $sidebarBackground;
+    margin-left: 84px;
+    margin-top: 30px;
+}
+.about-text {
+    width: 62%;
+    font-size: 15px;
+    color: $contentText;
+    margin-left: 84px;
+    margin-bottom: 0px;
+}
+
+.delimiter {
+    border-bottom: 5px solid #c9caca;
+    padding: 0 270px;
+    margin-left: 69px;
+}
+
+// PROJECT BUTTONS
+
+.project-name{
+    color: $sidebarBackground;
+    margin-top: 40px;
+    margin-left: 84px;
+}
+
+// Buttons
+.project {
+    *,
+    *::after,
+    *::before {
+        box-sizing: inherit;
+        margin: 0;
+        padding: 0;
+    }
+    font-size: 62.5%;
+}
+.myProjectButtons {
+    width: 75%;
+    margin-left: 84px;
+    box-sizing: border-box;
+    font-family: $nunitoFont;
+}
+
+.website {
+    margin-top: 3px;
+    margin-bottom: 13px;
+}
+
+button {
+    position: relative;
+    background-color:$sidebarBackground;
+    color: white;
+    border: none;
+    font-size: 15px!important;
+    line-height: 1;
+    overflow: hidden;
+    transition: all 0.3, ease-out;
+    height: 30px;
+    width: 160px;
+    margin-top: 2px!important;
+
+}
+//Button animation
+button:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: $topBackground;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    transform-origin: bottom left;
+    transform: translateX(-100px);
+    transition: transform 0.5s;
+}
+button:hover {
+    background-color: transparent;
+    cursor: pointer;
+}
+button:hover:before {
+    transform: translateX(0px)
+}
+
+.work-name{
+    color: $sidebarBackground;
+    margin-top: 40px;
+    margin-left: 84px;
+}
+.work-bullet {
+    list-style: none;
+}
+.work-bullet > li:before {
+    content: "•";
+    color: black;
+    font-weight: bold;
+    display: inline-block; 
+    width: 1em;
+    margin-left: -1em;
+}
+
+.education-name{
+    color: $sidebarBackground;
+    margin-top: 40px;
+    margin-left: 84px;
+}
+
+.interests-name {
+    color: $sidebarBackground;
+    margin-top: 40px;
+    margin-left: 84px;
+}
+
+/* -----------------------------------------
+        RESPONSIVE CONTENT at 1190
+--------------------------------------------*/
+
+@media only screen  and (max-width: 1190px) {
+
+    // SIDEBAR RESPONSE
+
+    ::i-block-chrome, body {
+        color:blue;
+       }
+
+    img {
+        border-radius: 50%;
+        width: 80%;
+        margin-left: 20px;
+        transition: $defaultTransition;
+    }
+    .titles {
+        font-family: $monteFont;
+        font-weight: 700;
+    }
+    .allText {
+        font-family: $nunitoFont;
+        font-size: 15px;
+        transition: $defaultTransition;
+    }
+    .textPosition {
+        margin-left: 55%;
+        color: black;
+    
+    }
+    .container {
+        
+        display: grid;
+        margin: 0px;
+        grid-gap: 30px;
+        grid-template-columns: 230px 300px 500px;
+        grid-template-rows: auto 600px 780px;
+        grid-template-areas:
+        "one two two"
+        "four five five"
+        "four five five"
+        "four five five";
+        transition: $defaultTransition;
+    }
+
+    .item2 {
+        grid-area: two;
+        margin-top: 100px;
+        margin-left: 250px;
+        width: 50%;
+        font-size: 15px!important;
+        color: white;
+        transition: $defaultTransition;
+    }
+    .item4 {
+        grid-area: five;
+        margin-left: -30px;
+        transition: $defaultTransition;
+    }
+    .item3 {
+        margin-left: -30px;
+        margin-bottom: 30px;
+        grid-area: four;
+        transition: $defaultTransition;
+    }
+        
+}
+
+/* -----------------------------------------
+        RESPONSIVE CONTENT at 1000
+--------------------------------------------*/
+
+@media only screen and (max-width: 1000px) {
+    body {
+        margin: 0;
+    }
+
+    .firstDesign {
+        background-color: $topBackground;
+        width: 0vw;
+        height: 0vh;
+        transform: rotate(0deg);
+        top: 0%;
+        left: 0%;
+        z-index: -1;
+        transition: $designTransition;
+      }
+      
+      .secondDesign {
+        background-color: $topBackground;
+        width: 100vw;
+        height: 45vh;
+        transform: rotate(0deg);
+        top: 0%;
+        z-index: -1;
+        transition: $designTransition;
+      }
+      
+      .designSidebar {
+        background-color: $sidebarBackground;
+        width: 105vw;
+        height: 100vh;
+        z-index: -2;
+        transition: $designTransition;
+      }
+      img {
+        border-radius: 50%;
+        width: 80%;
+        margin-left: 400px;
+        transform: rotate(360deg);
+        transition: $designTransition;
+    }
+
+
+    .main-content {
+        display: flex;
+        flex-direction: column;
+        margin-top: 500px;
+    }
+    .competencies {
+        margin-left: 360px;
+        transition: $designTransition;
+    }
+    .item2 {
+        margin: 50px;
+    }
+    .item4 {
+        margin-left: -20%;
+    }
+    .strengths-menu, .weaknesses-menu, .contact-menu, .social-menu,
+     .title-name, .delimiter, .interests-name, .interest {
+        display: none;
+    }
+    .container {
+        
+        display: grid;
+        grid-gap: 30px;
+        grid-template-columns: 230px auto auto;
+        grid-template-areas:
+        "one two two"
+        "four five five"
+        "four five five"
+        "four five five";
+        transition: $defaultTransition;
+    }
+    
+    .last-contact-name {
+        display: block;
+        color: $sidebarBackground;
+        margin-top: 40px;
+        margin-left: 84px;
+        
+    }
+    .last-contact-text {
+        display: block;
+        width: 62%;
+        font-size: 15px;
+        color: $contentText;
+        margin-left: 84px;
+        margin-bottom: 0px;
+    }
+}
+
+/* -----------------------------------------
+        RESPONSIVE CONTENT at 700
+--------------------------------------------*/
+
+@media screen and (max-width:700px) {
+
+    img {
+        border-radius: 50%;
+        width: 80%;
+        margin-left: 100%;
+        transform: rotate(360deg);
+        transition: $designTransition;
+    }
+    .competencies {
+        margin-left: 30%;
+        margin-top: 5%;
+        transition: $designTransition;
+    }
+
+    .item4 {
+        margin-left: -200px;
+    }
+}
+
+/* -----------------------------------------
+        RESPONSIVE CONTENT at 550
+--------------------------------------------*/
+
+@media screen and (max-width:550px) {
+
+    img {
+        border-radius: 50%;
+        width: 70%;
+        margin-left: 60%;
+        margin-top: -20%;
+        transform: rotate(360deg);
+        transition: $designTransition;
+    }
+    .competencies {
+        margin-left: 20%;
+        margin-top: 5%;
+        transition: $designTransition;
+    }
+}
