@@ -44,7 +44,7 @@ $designTransition: all 2s ease-in-out;
   .designSidebar {
     background-color: $sidebarBackground;
     width: 25vw;
-    height: 240vh;
+    height: 260vh;
     position: absolute;
     left: -1%;
     z-index: -2;
@@ -480,7 +480,7 @@ button:hover:before {
       .designSidebar {
         background-color: $sidebarBackground;
         width: 105vw;
-        height: 100vh;
+        height: 110vh;
         z-index: -2;
         transition: $designTransition;
       }
