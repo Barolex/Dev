@@ -1,0 +1,46 @@
+body.dark {
+  background-color: black;
+  color: aliceblue;
+}
+
+.square {
+    border: 3px solid gray;
+    height: 100px;
+    width: 10%;
+  }
+#first-message {
+  display: none;
+
+}
+
+#second-message {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .square {
+    border: 3px solid gray;
+    height: 50px;
+    width: 10%;
+  }
+  h1 {
+    font-size: 20px;
+  }
+  img {
+    width: 40px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 991px) {
+  .square {
+    border: 3px solid gray;
+    height: 70px;
+    width: 10%;
+  }
+  h1 {
+    font-size: 20px;
+  }
+  img {
+    width: 60px;
+  }
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.png" type="image/png"> 
+
+</head>
+
+<body">
+    <div class="d-flex justify-content-center">
+        <div class="custom-control custom-switch">
+            <input type="checkbox" class="custom-control-input" id="mySwitch">
+            <label class="custom-control-label" for="mySwitch">Dark/Light</label>
+          </div>
+      </div>
+    <div id="message" class="d-flex justify-content-center">
+        <span id="zero-message" class="h4">Press Start Game to play.</span>
+        <span id="first-message" class="h4">Player 1 make your move</span>
+        <span id="second-message" class="h4">Player 2 make your move</span>
+        <span id="win-message" class="h4"></span>
+
+    </div>
+
+    <div class="container" id="main">
+
+        <div class="rows d-flex justify-content-center">
+            <div id="11" class="square"></div>
+            <div id="12" class="square"></div>
+            <div id="13" class="square"></div>
+        </div>
+        <div class="rows d-flex justify-content-center">
+            <div id="21" class="square"></div>
+            <div id="22" class="square"></div>
+            <div id="23" class="square"></div>
+        </div>
+        <div class="rows d-flex justify-content-center">
+            <div id="31" class="square"></div>
+            <div id="32" class="square"></div>
+            <div id="33" class="square"></div>
+        </div>
+
+
+    </div> <!-- container -->
+    <div class="d-flex justify-content-center" id="btm-Btn">
+        <button class="mt-2" id="1v1" onclick="playerVsPlayer()">Start Game</button>
+    </div>
+
+</body>
+<script src="script.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</html>
